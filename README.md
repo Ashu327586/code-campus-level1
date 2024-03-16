@@ -10,6 +10,6 @@ This repository is for tracking progess of my Full Stack Development challenge
    
 <hi> WILDR PLATFORM !<h1>
 <img src="./a.jpeg" alt="Image Description">
- <p> Frontend </p>
+ <p> Frontend + backend = full stack </p>
 </body>
 </html>
