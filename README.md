@@ -8,7 +8,7 @@ This repository is for tracking progess of my Full Stack Development challenge
 </head>
 <body>
    
-<hi> WILDR <h1>
+<hi> WILDR is good <h1>
 <img src="./a.jpeg" alt="Image Description">
 <p> Backend</p>
 <p> = Full Stack </p>
