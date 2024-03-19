@@ -1,0 +1,1 @@
+Created the repo , done some commits and played around other git command
