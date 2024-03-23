@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid;
+            border-collapse: collapse;
+            background-color: lightcyan;
+
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="width: 100%;">
+        <tr style=>
+            <th style="width: 15%;background-color: white; ">Tag</th>
+            <th style="width: 35%;background-color: white; ">Description</th>
+            <th style="width: 50%;background-color: white; ">Output</th>
+        </tr>
+        <tr>
+            <td>
+                < !--->
+            </td>
+            <td>This tag is used as a single line comment</td>
+            <td><code>this is comment</code></td>
+        </tr>
+        <tr>
+            <td>
+                < !DOCTYPE>
+            </td>
+            <td>Defines the document type</td>
+            <td>-x-</td>
+        </tr>
+        <tr>
+            <td>
+                < a>
+            </td>
+            <td>Defines a hyperlink</td>
+            <td><code><a href="">Click me </a></code></td>
+        </tr>
+        <tr>
+            <td>
+                < audio>
+            </td>
+            <td>This is used to embed sound content in documents</td>
+            <td><audio controls>
+                    <source src="./media/engine.mp3" type="audio/mpeg">
+                </audio></td>
+
+        </tr>
+        <tr>
+            <td>
+                < b>
+            </td>
+            <td>This tag is used bold text</td>
+            <td><b>bold text</b></td>
+        </tr>
+        <tr>
+            <td>
+                < body>
+            </td>
+            <td>Defines content of html document</td>
+            <td>-x-</td>
+        </tr>
+        <tr>
+            <td>
+                < br>
+            </td>
+            <td>Defines a singlr line break</td>
+            <td>Hi this is how <br>line break works</td>
+        </tr>
+        <tr>
+            <td>
+                < canvas>
+            </td>
+            <td>Used to draw graphics, on the fly,via scripting</td>
+            <td>-x-</td>
+        </tr>
+        <tr>
+            <td>
+                < code>
+            </td>
+            <td>Defines a piece of code</td>
+            <td>
+                <pre>
+                    <code>
+int x=1;
+x++;
+                    </code>
+            </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                < div>
+            </td>
+            <td>Defines a portion of a html page</td>
+            <td>
+                <div style="background-color: lightblue;">divison1</div>
+                <div style="background-color: lightgreen;">divison2</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                < hr>
+            </td>
+            <td>This tag is used to draw a horizontal line</td>
+            <td>
+                <pre style="text-align: left;">paragraph 1 
+                  <hr style="border: 1px solid;">paragraph 2
+            </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                < h1>,< h2>,< h3>,< h4>,< h5>,< h6>
+            </td>
+            <td>Defines varying sizes for heading of a HTML document</td>
+            <td style="text-align: left;">
+                <h1> this is the size of h1</h1>
+                <h2>this is the size of h2</h2>
+                <h3>this is the size of h3</h3>
+                <h4>this is the size of h4</h4>
+                <h5>this is the size of h5</h5>
+                <h6>this is the size of h6</h6>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                < head>
+            </td>
+            <td>Contains metadata for the document,link for external css</td>
+            <td>-x-</td>
+        </tr>
+        <tr>
+            <td>
+                < header>
+            </td>
+            <td>It is used to represent the top section of a webpage</td>
+            <td>-x-</td>
+        </tr>
+        <tr>
+        <tr>
+            <td>
+                < i>
+            </td>
+            <td>used for italic characters/word</td>
+            <td><i>Hello World!</i></td>
+        </tr>
+        <td>
+            < img>
+        </td>
+        <td>Used to display image on the webpage</td>
+        <td>My dream car <br><img width="100px" height="100px" src="./media/car.jpg" alt="car"></td>
+        </tr>
+        <tr>
+            <td>
+                < input>
+            </td>
+            <td>Used to take input from user </td>
+            <td>Name:
+                <input type="text" placeholder="Enter your name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                < ul> and < li>
+                        </li>
+            </td>
+            <td>Used for creating unordered list</td>
+            <td style="text-align: left;">
+                <ul>
+                    <li>Apple</li>
+                    <li>Banana</li>
+                    <li>Grapes</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+        <tr>
+            <td>
+                < ol> and < li>
+            </td>
+            <td>Used for creating ordered list</td>
+            <td style="text-align: left;">
+                Flow of Web Development course:
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                < textarea>
+            </td>
+            <td>Defines a multiline input control</td>
+            <td><textarea placeholder="Enter your address" cols="40" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <td>
+                < video>
+            </td>
+            <td>It is used to embed a media player which supports video playback in the webpage</td>
+            <td><video width="300px" controls src="./media/vd1.mp4"></video></td>
+        </tr>
+
+
+
+    </table>
+</body>
+
+</html>
