@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS properties</title>
+    <style>
+        * {
+            font-size: medium;
+            font-style: oblique;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            background-color: grey;
+
+            color: white;
+            border-radius: 10px;
+            padding: 10px 30px;
+            margin: 30px;
+            border: 5px solid black;
+        }
+
+        #main {
+            background-color: red;
+            padding: 20px;
+            margin: 20px;
+            display: block;
+            border: 5px dotted yellow;
+            border-radius: 50px;
+
+        }
+
+        .btn button {
+            background-color: black;
+            color: white;
+            display: block;
+            width: 50%;
+            height: 50px;
+            margin: 0px auto;
+            cursor: pointer;
+
+        }
+
+        .btn button:hover {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit molestie tellus, posuere
+                ultrices
+                nisl
+                dignissim eget. Ut ullamcorper quis neque eu ornare. Morbi aliquet egestas felis, posuere congue nisl
+                sagittis eget.
+                Suspendisse consectetur, metus quis auctor tristique, lorem ex aliquam justo, in bibendum erat metus id
+                eros. Vivamus
+                cursus purus non tortor varius maximus. Donec sit amet magna id ligula interdum ultrices. Morbi
+                vulputate
+                ullamcorper
+                massa, pellentesque pulvinar enim dictum sed. Curabitur vitae diam iaculis, varius dui eget, euismod
+                lacus.
+                Vestibulum
+                libero turpis, dignissim sed ante sit amet, tempor vehicula purus. Nullam vehicula orci neque, vel
+                sagittis
+                augue mattis
+                vitae. Phasellus tristique risus id felis facilisis luctus.
+            </p>
+        </div>
+        <div class="container">
+            <p>
+
+                Sed nec nisl justo. Nullam lobortis tellus at ipsum dignissim iaculis. Quisque vitae dui a velit
+                eleifend
+                sodales ut vel
+                felis. Vivamus molestie metus quis velit malesuada, a facilisis velit rutrum. Cras quis mattis libero,
+                vitae
+                mollis dui.
+                Nam vitae dui est. Suspendisse tortor nibh, dapibus in efficitur non, mattis mollis sem.
+
+            </p>
+        </div>
+
+    </div>
+    <div class="btn" id="button">
+        <button onclick="toggleDisplay()">Click me!</button>
+    </div>
+    <script>
+        function toggleDisplay() {
+            var element = document.getElementById("main");
+            var currentDisplay = window.getComputedStyle(element).display;
+
+            // Toggle between "block" and "flex"
+            if (currentDisplay === "block") {
+                element.style.display = "flex";
+            } else {
+                element.style.display = "block";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
