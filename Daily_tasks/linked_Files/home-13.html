@@ -5,16 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const username = urlParams.get('username');
-        document.querySelector('h1').textContent = `Welcome, ${username}!`;
-    </script>
+    <style>
+        .main {
+            display: block;
+            margin: 0px auto;
+            width: 300px;
+            margin-top: 100px;
+        }
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 
 </head>
 
 <body>
-    <h1></h1>
+    <h1>Welcome</h1>
+    <div class="main">
+        <p>You have successfully logged in.</p>
+        <p>What would you like to do now?</p>
+        <button>Go to Profile</button>
+        <button>Access Resources</button>
+    </div>
+
 </body>
 
 </html>
