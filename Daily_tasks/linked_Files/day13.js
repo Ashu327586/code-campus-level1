@@ -58,7 +58,7 @@ btn.addEventListener("click", function (event) {
             alert("Logged In");
 
             setTimeout(() => {
-                window.location.href = "Daily_tasks\linked_Files\home-13.html";
+                window.location.href = "http://127.0.0.1:8080/Daily_tasks/linked_Files/home-13.html";
             }, 2);
         }
         else {
