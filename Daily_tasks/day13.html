@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script defer src="./linked_Files/day13.js">
+    </script>
+    <style>
+        .form-container {
+            background-color: rgb(225, 224, 222);
+            width: 300px;
+            display: block;
+            margin: 0px auto;
+            margin-top: 200px;
+            padding: 10px 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        .form-field {
+            display: block;
+            margin: 0px auto;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin: 0px auto;
+            margin-bottom: 5px;
+        }
+
+        .error {
+            margin: 5px 0px;
+            color: red;
+            font-size: 12px;
+        }
+
+        .btn {
+            margin: 0px auto;
+            display: block;
+            background-color: rgb(94, 94, 252);
+            padding: 5px 30px;
+            cursor: pointer;
+
+        }
+
+        .form-field input[type="text"],
+        .form-field input[type="password"] {
+            padding: 10px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <form>
+            <div class="form-field">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="UserName">
+                <div class="error" id="username-err"></div>
+            </div>
+            <div class="form-field">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+                <div class="error" id="password-err"></div>
+            </div>
+            <div class="form-field">
+                <input id="submit" class="btn" type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
