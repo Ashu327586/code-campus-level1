@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack Form</title>
+    <style>
+        .main {
+            display: flex;
+        }
+
+        .form-container {
+            display: block;
+            margin: 0px auto;
+            margin-top: 100px;
+            width: 400px;
+            background-color: rgb(232, 244, 255);
+            padding: 5px 5px;
+        }
+
+        .form-field label {
+            display: block;
+            margin: 0px auto;
+        }
+
+        .form-field {
+            text-align: justify;
+            margin-bottom: 10px;
+            border-bottom: 2px dotted;
+        }
+
+        #submit {
+            display: block;
+            margin: 0px auto;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: fantasy;
+        }
+
+        #selected-data {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="form-container">
+            <h1 style="text-align: center; border-bottom: 2px solid black ;  ">FeedBack Form</h1>
+
+            <form action="" id="feedback-form">
+                <div class="form-field">
+                    <label for="l1">Do you feel you are learning something?:</label>
+                    <label><input type="radio" name="l1" id="yes" value="Yes">Yes</label>
+                    <label><input type="radio" name="l1" id="no" value="No">No</label>
+                </div>
+                <div class="form-field">
+                    <label for="l2">FeedBack about the challenge: </label>
+                    <textarea id="feedback" name="feedback" rows="5" cols="40"
+                        placeholder="Feel free to express your thoughts"></textarea> <br>
+                </div>
+                <div class="form-field">
+                    <label for="l3">Which technologies are you looking forward for in the next challenge?</label>
+
+                    <label for="Angular"> <input type="checkbox" name="Angular" id="Angular"> Angular</label>
+                    <label for="NestJS"><input type="checkbox" name="NestJS" id="NestJS"> NestJS</label>
+                    <label for="NodeJS"> <input type="checkbox" name="NodeJS" id="NodeJS"> NodeJS </label>
+                    <label for="AWS"> <input type="checkbox" name="AWS" id="AWS"> AWS</label>
+                    <label for="Firebase"> <input type="checkbox" name="Firebase" id="Firebase"> Firebase</label>
+                    <label for="CICD"> <input type="checkbox" name="CICD " id="CICD "> CICD</label>
+                </div>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+        <div id="selected-data" class="form-container"></div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("feedback-form");
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                const selectedDataDiv = document.getElementById("selected-data");
+
+                // Get the selected values
+                const learningValue = document.querySelector('input[name="l1"]:checked').value;
+                const feedback = document.getElementById("feedback").value;
+
+                const technologies = [];
+                const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+                checkboxes.forEach(function (checkbox) {
+                    technologies.push(checkbox.id); // Pushing the ID of the checkbox
+                });
+
+                // Create a message with the selected data
+                let message = "<h2>Review your Respones </h2> ";
+                message += "<p>Do you feel you are learning something?: <br> " + learningValue + "</p>";
+                message += "<p>Feedback about the challenge: <br> " + feedback + "</p>";
+                message += "<p>Technologies looking forward to: <br> " + technologies.join(", ") + "</p>";
+
+                // Display the message in the selected-data div
+                selectedDataDiv.innerHTML = message;
+
+                selectedDataDiv.style.display = "block";
+            });
+        });
+    </script>
+
+</body>
+
+</html>
